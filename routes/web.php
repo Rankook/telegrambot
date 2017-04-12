@@ -20,7 +20,7 @@ Route::get('/testbot1','telegramtestcontroller@sendtext');
 
 Route::get('/set', function () {
     $res = Telegram::setWebhook([
-        'url' => 'https://hamyad.herokuapp.com/376682828:AAE79WT571kMAmUk77iD3KJIni0ml7xixEs/webhook'
+        'url' => 'https://threedman.herokuapp.com/343139142:AAGCpIOGVwFcbbJL56sLVSXUgz8zO3jPc34/webhook'
     ]);
     dd($res);
 
@@ -69,7 +69,7 @@ Route::get('/pdf','Pdfcontroller@index');
 //    return 'ok';
 //});
 
-Route::post('/376682828:AAE79WT571kMAmUk77iD3KJIni0ml7xixEs/webhook','TelegramController@run');
+Route::post('/343139142:AAGCpIOGVwFcbbJL56sLVSXUgz8zO3jPc34/webhook','TelegramController@run');
 
 Route::get('testdatabase',function (){
     return \App\Conversation::all();
